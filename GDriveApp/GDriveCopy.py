@@ -25,3 +25,6 @@ source = os.getenv("Source", ".")
 destination = os.getenv("Destination", ".")
 
 SyncAndCopyFiles(source, destination)
+while True:
+    time.sleep(1)
+    print(datetime.now(), flush=True)
