@@ -13,9 +13,9 @@ def SyncAndCopyFiles(Source : str, Destination : str) :
     print(Destination, flush=True)
 
 
-    files = os.listdir(Source)
+    files = os.listdir("/source")
 
-    fh = open(os.path.join(Destination, "filelist.txt"), "w")
+    fh = open(os.path.join("/source", "filelist.txt"), "w")
     fh.write(Source + "\n")
     fh.write(Destination + "\n")
     fh.write ("\n".join(files))

@@ -7,6 +7,6 @@ WORKDIR /app
 # COPY requirements.txt requirements.txt
 # RUN pip3 install -r requirements.txt
 
-COPY GDriveApp/GDriveCopy.py GDriveCopy.py
+COPY GDriveApp .
 
 CMD [ "python", "GDriveCopy.py"]
